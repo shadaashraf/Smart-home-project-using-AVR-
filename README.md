@@ -4,10 +4,10 @@
 The Smart Home System project integrates master and slave microcontrollers to create an intelligent home automation solution. The system enables users to remotely control home appliances and monitor environmental conditions for optimal comfort and energy efficiency.
 
 ## Components
-### Microcontrollers
-- **Description:** Control the operation of the smart home system and manage communication between master and slave devices.
+## Microcontrollers
+- **Description:** Control the operation of the smart home system and manage communication between the master and slave microcontrollers.
 - **Models:** ATMEGA32.
-
+  
 ### LCD Display
 - **Description:** Provides visual feedback to users, displaying system status and allowing user authentication.
 - **Features:** Utilizes an LCD screen for user interactions and authentication purposes.

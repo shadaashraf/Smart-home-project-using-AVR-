@@ -6,16 +6,16 @@ The Smart Home System project integrates master and slave microcontrollers to cr
 ## Components
 ### Microcontrollers
 - **Description:** Control the operation of the smart home system and manage communication between master and slave devices.
-- **Models:** Specify the models or types of microcontrollers used for the master and slave devices.
+- **Models:** ATMEGA32.
 
 ### LCD Display
 - **Description:** Provides visual feedback to users, displaying system status and allowing user authentication.
 - **Features:** Utilizes an LCD screen for user interactions and authentication purposes.
 
-### Sensors and Actuators
-- **Description:** Interfaces with various sensors and actuators to monitor and control home appliances and environmental conditions.
-- **Components:** Include sensors for temperature monitoring and actuators for controlling appliances like lights and air conditioning.
-
+## Sensors
+- **Description:** Interfaces with temperature sensors to monitor environmental conditions.
+- **Components:** Include sensors specifically designed for temperature monitoring.
+  
 ## Features
 - **Appliance Control:** Allows users to remotely turn on/off home appliances such as lights, air conditioning, and television.
 - **Temperature Monitoring:** Continuously monitors room temperature and adjusts air conditioning settings based on user-defined thresholds.
@@ -33,13 +33,17 @@ Ensure proper integration between master and slave devices, following the define
 Power on the system and follow the LCD prompts for user authentication and system operation.
 
 ## Communication Protocol
-The communication protocol between master and slave devices enables the exchange of commands and data for controlling appliances and exchanging status information.
+The communication protocol between master and slave devices is SPI, it's enables the exchange of commands and data for controlling appliances and exchanging status information.
 
 ## Dependencies
 - **AVR Toolchain:** Compiler and toolchain for building AVR-based projects.
-- **AVR-Libc:** C library for AVR microcontrollers.
-- **LCD Library:** Library for interfacing with the LCD display.
-- **Sensor and Actuator Libraries:** Libraries for interfacing with sensors and actuators.
+- **DIO Driver:** Driver for interfacing with digital input/output (DIO) pins.
+- **SPI Driver:** Driver for SPI communication protocol.
+- **ADC Driver:** Driver for analog-to-digital conversion.
+- **Keypad Driver:** Driver for interfacing with keypad input devices.
+- **EEPROM Driver:** Driver for interfacing with EEPROM memory.
+- **Timer Driver:** Driver for managing timer modules.
+- **LCD Driver:** Library for interfacing with the LCD display.
 
 ## License
 This project is licensed under the Online diploma with Eng.Mohamed zaghloul.
